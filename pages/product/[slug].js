@@ -1,5 +1,5 @@
 import styles from "../../styles/product.module.scss";
-import db from "../utils/db";
+import db from "../../utils/db";
 import Produc from "../../models/Produc";
 import Category from "../../models/Category";
 import SubCategory from "../../models/SubCategory";

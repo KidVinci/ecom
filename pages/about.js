@@ -4,7 +4,7 @@ import axios from 'axios';
 import Link from 'next/link';
 import Produc from "../models/Produc";
 import { useSession, signIn, signOut } from "next-auth/react";
-import db from "./utils/db";
+import db from "../utils/db";
 const inter = Inter({ subsets: ['latin'] });
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';

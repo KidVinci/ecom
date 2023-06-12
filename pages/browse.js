@@ -1,5 +1,5 @@
 import styles from "../styles/browse.module.scss";
-import db from "./utils/db";
+import db from "../utils/db";
 import Produc from "../models/Produc";
 import Category from "../models/Category";
 import Header from "../components/header";
@@ -8,7 +8,7 @@ import {
   filterArray,
   randomize,
   removeDuplicates,
-} from "./utils/arrays_utils";
+} from "../utils/arrays_utils";
 import Link from "next/link";
 import ProductCard from "@/components/productCard";
 import CategoryFilter from "../components/browse/categoryFilter";

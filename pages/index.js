@@ -11,7 +11,7 @@ import { useMediaQuery } from 'react-responsive';
 import { bathroom, cutting_boards, decor, kitchen } from '@/data/home';
 import { useSession, signIn, signOut } from "next-auth/react";
 import Produc from "../models/Produc";
-import db from "./utils/db";
+import db from "../utils/db";
 import ProductSwiper from '@/components/productsSwiper';
 import ProductCard from '@/components/productCard';
 const inter = Inter({ subsets: ['latin'] });
