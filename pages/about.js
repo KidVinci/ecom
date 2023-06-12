@@ -2,7 +2,7 @@ import { Inter } from 'next/font/google';
 import styles from '@/styles/land.module.scss';
 import axios from 'axios';
 import Link from 'next/link';
-import Produc from "../models/Product";
+import Produc from "../models/Produc";
 import { useSession, signIn, signOut } from "next-auth/react";
 import db from "./utils/db";
 const inter = Inter({ subsets: ['latin'] });
@@ -16,7 +16,7 @@ export default function About(){
     <div class={styles.logos_selection}>
       <h2 class={styles.logo}>MED</h2>
         <ul class={styles.menu_items}>
-           <Link href="./shop">
+           <Link href="./">
               <li>Store</li>
            </Link> 
             <li>Blog</li>
@@ -60,7 +60,7 @@ export default function About(){
       </div>
             <div class={styles.right}>
               <div className={styles.scriptRight}>
-              <Link href="./shop">
+              <Link href="./">
               <h1>Shop</h1>
               </Link>
               

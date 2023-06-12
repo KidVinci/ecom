@@ -1,6 +1,6 @@
 import styles from "../../styles/product.module.scss";
 import db from "../utils/db";
-import Produc from "../../models/Product";
+import Produc from "../../models/Produc";
 import Category from "../../models/Category";
 import SubCategory from "../../models/SubCategory";
 import User from "../../models/User";
@@ -54,7 +54,7 @@ export async function getServerSideProps(context) {
   const size = query.size || 0;
   db.connectDb();
   //------------
-  let product = await Product.findOne({ slug })
+  let product = await Produc.findOne({ slug })
     .populate({ path: "category", model: Category })
     .populate({ path: "subCategories", model: SubCategory })
     .populate({ path: "reviews.reviewBy", model: User })
@@ -123,7 +123,7 @@ export async function getServerSideProps(context) {
           array.findIndex((el2) => el2.size === element.size) === index
       ),
   };
-  const related = await Product.find({ category: product.category._id }).lean();
+  const related = await Produc.find({ category: product.category._id }).lean();
   //------------
   function calculatePercentage(num) {
     return (

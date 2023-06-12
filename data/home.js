@@ -82,7 +82,7 @@ export const offersAarray = [
       },
       {
         name: "Blog",
-        link: "",
+        link: "./about",
         subMenu: [
           {
             name: "",

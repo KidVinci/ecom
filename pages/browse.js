@@ -1,6 +1,6 @@
 import styles from "../styles/browse.module.scss";
 import db from "./utils/db";
-import Produc from "../models/Product";
+import Produc from "../models/Produc";
 import Category from "../models/Category";
 import Header from "../components/header";
 import SubCategory from "../models/SubCategory";

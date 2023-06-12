@@ -125,7 +125,7 @@ const productSchema = new mongoose.Schema(
     timestamps: true,
   }
 );
-const Product =
+const Produc =
   mongoose.models.Product || mongoose.model("Product", productSchema);
 
 export default Produc;
