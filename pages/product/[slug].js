@@ -13,7 +13,7 @@ import { useState } from "react";
 import Infos from "../../components/productPage/infos";
 import Reviews from "@/components/productPage/reivews/Review";
 import ProductsSwiper from "../../components/productsSwiper";
-export default function Product({ product, related }) {
+export default function Produc({ product, related }) {
   const [activeImg, setActiveImg] = useState("");
   const country = {
     name: "United States",
