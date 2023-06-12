@@ -4,7 +4,7 @@ import Header from '@/components/header';
 import Footer from '@/components/footer';
 import Link from 'next/link';
 import Main from '@/components/home/main';
-import FlashDeals from "../components/home/flashDeals";
+
 import Category from '@/components/home/category';
 import axios from 'axios';
 import { useMediaQuery } from 'react-responsive';

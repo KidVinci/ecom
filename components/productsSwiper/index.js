@@ -1,6 +1,7 @@
 import styles from "./styles.module.scss";
 import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Image from "next/image";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Navigation } from "swiper";
@@ -43,7 +44,7 @@ export default function ProductsSwiper({ header, products, bg }) {
           <SwiperSlide key={index}>
             <div className={styles.product}>
               <div className={styles.product__img}>
-                <img src={product.image} alt="" />
+                <Image src={product.image} />
               </div>
               <div className={styles.product__infos}>
                 <h1>
