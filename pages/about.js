@@ -2,14 +2,14 @@ import { Inter } from 'next/font/google';
 import styles from '@/styles/land.module.scss';
 import axios from 'axios';
 import Link from 'next/link';
-import Product from "../models/Product";
+import Produc from "../models/Product";
 import { useSession, signIn, signOut } from "next-auth/react";
 import db from "./utils/db";
 const inter = Inter({ subsets: ['latin'] });
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
-export default function about(){
+export default function About(){
     return(
         <>
 <nav>
@@ -142,7 +142,7 @@ export default function about(){
 }
 export async function getServerSideProps(){
   db.connectDb();
-  let products = await Product.find().sort({ createdAt: -1 }).lean();
+  let products = await Produc.find().sort({ createdAt: -1 }).lean();
   let data = await axios
     .get("https://api.ipregistry.co/?key=ppheeccexzk4qtx3")
     .then((res) => {
