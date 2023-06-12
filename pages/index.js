@@ -10,7 +10,7 @@ import axios from 'axios';
 import { useMediaQuery } from 'react-responsive';
 import { bathroom, cutting_boards, decor, kitchen } from '@/data/home';
 import { useSession, signIn, signOut } from "next-auth/react";
-import Product from "../models/Product";
+import Produc from "../models/Product";
 import db from "./utils/db";
 import ProductSwiper from '@/components/productsSwiper';
 import ProductCard from '@/components/productCard';
@@ -74,7 +74,7 @@ export default function Home({country, products}) {
 
 export async function getServerSideProps(){
   db.connectDb();
-  let products = await Product.find().sort({ createdAt: -1 }).lean();
+  let products = await Produc.find().sort({ createdAt: -1 }).lean();
   let data = await axios
     .get("https://api.ipregistry.co/?key=ppheeccexzk4qtx3")
     .then((res) => {

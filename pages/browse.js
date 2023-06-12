@@ -1,6 +1,6 @@
 import styles from "../styles/browse.module.scss";
 import db from "./utils/db";
-import Product from "../models/Product";
+import Produc from "../models/Product";
 import Category from "../models/Category";
 import Header from "../components/header";
 import SubCategory from "../models/SubCategory";
@@ -467,7 +467,7 @@ export async function getServerSideProps(ctx) {
     });
   //-------------------------------------------------->
   db.connectDb();
-  let productsDb = await Product.find({
+  let productsDb = await Produc.find({
     ...search,
     ...category,
     ...brand,
@@ -494,14 +494,14 @@ export async function getServerSideProps(ctx) {
       model: Category,
     })
     .lean();
-  let colors = await Product.find({ ...category }).distinct(
+  let colors = await Produc.find({ ...category }).distinct(
     "subProducts.color.color"
   );
-  let brandsDb = await Product.find({ ...category }).distinct("brand");
-  let sizes = await Product.find({ ...category }).distinct(
+  let brandsDb = await Produc.find({ ...category }).distinct("brand");
+  let sizes = await Produc.find({ ...category }).distinct(
     "subProducts.sizes.size"
   );
-  let details = await Product.find({ ...category }).distinct("details");
+  let details = await Produc.find({ ...category }).distinct("details");
   let stylesDb = filterArray(details, "Style");
   let patternsDb = filterArray(details, "Pattern Type");
   let materialsDb = filterArray(details, "Material");
@@ -509,7 +509,7 @@ export async function getServerSideProps(ctx) {
   let patterns = removeDuplicates(patternsDb);
   let materials = removeDuplicates(materialsDb);
   let brands = removeDuplicates(brandsDb);
-  let totalProducts = await Product.countDocuments({
+  let totalProducts = await Produc.countDocuments({
     ...search,
     ...category,
     ...brand,

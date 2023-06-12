@@ -8,8 +8,8 @@ import db from "./utils/db";
 const inter = Inter({ subsets: ['latin'] });
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-export default function alt({product}){
+
+export default function about(){
     return(
         <>
 <nav>

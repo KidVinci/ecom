@@ -1,6 +1,6 @@
 import styles from "../../styles/product.module.scss";
 import db from "../utils/db";
-import Product from "../../models/Product";
+import Produc from "../../models/Product";
 import Category from "../../models/Category";
 import SubCategory from "../../models/SubCategory";
 import User from "../../models/User";
@@ -13,7 +13,7 @@ import { useState } from "react";
 import Infos from "../../components/productPage/infos";
 import Reviews from "@/components/productPage/reivews/Review";
 import ProductsSwiper from "../../components/productsSwiper";
-export default function Produc({ product, related }) {
+export default function Product({ product, related }) {
   const [activeImg, setActiveImg] = useState("");
   const country = {
     name: "United States",
