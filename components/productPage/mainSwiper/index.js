@@ -1,5 +1,5 @@
 import styles from "./styles.module.scss";
-import ReactImageMagnify from "react-image-magnify";
+import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 
 import { useState } from "react";
 
@@ -9,24 +9,12 @@ export default function MainSwiper({ images, activeImg }) {
     
     <div className={styles.swiper}>
       <div className={styles.swiper__active}>
-      <ReactImageMagnify
-          {...{
-            smallImage: {
-              alt: "",
-              isFluidWidth: true,
-              src: activeImg || images[active].url,
-            },
-            largeImage: {
-              src: activeImg || images[active].url,
-              width: 1500,
-              height: 2000,
-            },
-            enlargedImageContainerDimensions: {
-              width: "200%",
-              height: "100%",
-            },
-          }}
-        />
+      <TransformWrapper>
+      <TransformComponent>
+        <img src={activeImg || images[active].url }alt="test" />
+      </TransformComponent>
+    </TransformWrapper>
+     
       </div>
       <div className={styles.swiper__list}>
         {images.map((img, i) => (
