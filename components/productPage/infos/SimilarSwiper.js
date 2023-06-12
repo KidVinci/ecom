@@ -29,7 +29,7 @@ export default function SimillarSwiper() {
       }}
     >
       {simillar_products?.map((p) => (
-        <SwiperSlide>
+        <SwiperSlide key={index}>
           <Link href="">
             <img src={p} alt="" />
           </Link>
