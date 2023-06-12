@@ -15,7 +15,7 @@ import db from "./utils/db";
 import ProductSwiper from '@/components/productsSwiper';
 import ProductCard from '@/components/productCard';
 const inter = Inter({ subsets: ['latin'] });
-export default function home({country, products}) {
+export default function Home({country, products}) {
   const { data: session } = useSession();
   const isMedium = useMediaQuery({ query: "(max-width:850px)" });
   const isMobile = useMediaQuery({ query: "(max-width:550px)" });
