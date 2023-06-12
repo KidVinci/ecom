@@ -1,0 +1,105 @@
+/* The following line can be included in a src/App.scss */
+.cover{
+    background-image: url("../public/images/5.png");
+    background-size: 100% 100%;
+    min-height: 100%;
+    width: 100%;
+    position: relative;
+}
+.secondLvl{
+    position: relative;
+    width: 100%;
+    .left{
+        width: 70%;
+        padding: 12% 0;
+        margin: auto auto auto 0;
+        .piImg img{ 
+            width: 48%;
+        }
+        .bigImg {
+            padding-bottom: 0;
+        }
+    }
+    
+    .bigImg img{
+        /* height: 400px; */
+        width: 100%;
+    }
+    .right{
+        width: 30%;
+        text-align: right;
+        padding-top: 10%;
+        .bigImg{
+            padding-left:0;
+            padding-top:0;
+            }
+    }
+}
+.bottom{
+    width: 100%;
+
+}
+.contact{
+  
+    position: relative;
+    display: flex;
+    width: 100%;
+    input{
+        border: none;
+        width: 80%;
+    }
+    .left{
+        width: 70%;
+        margin: auto 0;
+    }
+    .right{
+        width: 30%;
+        text-align: right;
+    
+    }
+}
+
+.topText{
+    text-align: left;
+    width: 50%;
+    margin: auto;
+    padding: 10% 0;
+    color: #c4c2c2;
+    .top{
+
+        padding: 1%;
+        backdrop-filter: blur(10px);
+    }
+}
+
+
+.cta_btns{
+    display: flex;
+    justify-content: space-between;
+}
+.cta_btns li{
+    list-style: none;
+    margin-right: 1rem;
+    font-size: 1rem;
+    color: hsl(0, 0%, 44%);
+}
+.logos_selection{
+    display: flex;
+    .menu_items{
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu_items li{
+        list-style: none;
+        margin-right: 1rem;
+        font-size: 1rem;
+        color: hsl(0, 0%, 44%);
+    }
+}
+
+.footer{
+    width: 100%;
+    margin: 10px auto;
+    height: 50px;
+    background-color: rgb(26, 26, 26);
+}
