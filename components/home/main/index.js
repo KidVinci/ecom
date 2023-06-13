@@ -1,6 +1,6 @@
 import styles from "./styles.module.scss";
 import MainSwiper from "./swiper";
-import Offers from "./offers";
+
 import { useSession } from "next-auth/react";
 import Menu from "./Menu";
 import Link from "next/link";
