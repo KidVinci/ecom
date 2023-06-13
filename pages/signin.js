@@ -117,7 +117,7 @@ export default function Signin({ providers, callbackUrl, csrfToken }) {
     }
   };
   const country = {
-    name: "Morocco",
+    name: "United States",
     flag: "https://cdn-icons-png.flaticon.com/512/197/197551.png?w=360",
   };
   return (
@@ -264,7 +264,7 @@ export default function Signin({ providers, callbackUrl, csrfToken }) {
           </div>
         </div>
       </div>
-      <Footer country="Morocco" />
+      <Footer country="United States" />
     </>
   );
 }
