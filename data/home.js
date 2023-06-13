@@ -144,55 +144,55 @@
     {
       name: "Transform Your Bathroom Oasis: Inspiring Ideas for Stylish Décor",
       image:
-        "../images/bath1.jpg",
+        "/images/bath1.jpg",
       price: "",
     },
     {
       name: "Elevate Your Bathroom's Aesthetic",
       image:
-        "../images/bath2.jpg",
+        "/images/bath2.jpg",
       price: "",
     },
     {
       name: "From Drab to Fab",
       image:
-        "../images/bath3.jpg",
+        "/images/bath3.jpg",
       price: "",
     },
     {
       name: "Effortless Elegance",
       image:
-        "../images/bath4.jpg",
+        "/images/bath4.jpg",
       price: "",
     },
     {
       name: "15pcs Gemstone & Rhinestone Decor Ring",
       image:
-        "../images/bath5.jpg",
+        "/images/bath5.jpg",
       price: "",
     },
     {
       name: "5pcs Halloween Pumpkin & Ghost Design Shoe Decoration",
       image:
-        "../images/bath6.jpg",
+        "/images/bath6.jpg",
       price: "",
     },
     {
       name: "Minimalist Marvels",
       image:
-        "../images/bath7.jpg",
+        "/images/bath7.jpg",
       price: "",
     },
     {
       name: "Bold and Beautiful",
       image:
-        "../images/bath8.jpg",
+        "/images/bath8.jpg",
       price: "",
     },
     {
       name: "Creating a Serene Retreat: The Secrets of Zen-inspired Bathroom Décor",
       image:
-        "../images/bath9.jpg",
+        "/images/bath9.jpg",
       price: "",
     },
   ];
