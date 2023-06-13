@@ -6,7 +6,7 @@ export default function Links(){
         <div className={styles.footer__links}>
             {links.map((link,i)=>(
                 <ul
-                key={index}>
+                key={i}>
                 {i===0?
                 (<img src="./images/shoppay.png" alt="" /> ) : (
                     <b>{link.heading}</b>
