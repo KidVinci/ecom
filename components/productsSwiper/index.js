@@ -44,7 +44,7 @@ export default function ProductsSwiper({ header, products, bg }) {
           <SwiperSlide key={product.id}>
             <div className={styles.product}>
               <div className={styles.product__img}>
-                <img src={product.image} />
+                <Image src={product.image} width={500} height={500} alt=""/>
               </div>
               <div className={styles.product__infos}>
                 <h1>
