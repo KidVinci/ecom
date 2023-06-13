@@ -12,7 +12,7 @@ export default function Links(){
                     <b>{link.heading}</b>
                 )}
                     {link.links.map((link)=>(
-                            <li key={index}>
+                            <li key={i}>
                                 <Link href="/">{link.name}</Link>
                             </li>
                         ))}
@@ -24,7 +24,7 @@ export default function Links(){
 
 const links = [
     {
-        heading:"SHOPPAY",
+        heading:"Modern E",
         links:[
         {   
             name:"About us",
@@ -79,10 +79,6 @@ const links = [
             {
                 name:"Consumers (Transactions)",
                 link:"",
-            },
-            {
-                name:"Take our feedback survey",
-                link:""
             },
         ],
     },

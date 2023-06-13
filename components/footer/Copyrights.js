@@ -13,7 +13,7 @@ export default function Copyright({country}){
             <ul>
                 {data.map((data)=>(
                     <li
-                    key={index}>
+                    key={data.id}>
                         <Link href={data.link}>
                             {data.name}
                         </Link>
