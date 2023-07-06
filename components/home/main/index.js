@@ -25,7 +25,7 @@ export default function Main() {
   const { data: session } = useSession();
   return (
     <div className={styles.main}>
-      <Header />
+      
       <Menu />
       <MainSwiper />
       
