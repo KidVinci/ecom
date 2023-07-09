@@ -1,4 +1,5 @@
 import '@/styles/globals.scss';
+import React, { Component, PropTypes } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Provider } from 'react-redux';
 import store from '@/store';
